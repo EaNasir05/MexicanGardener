@@ -14,11 +14,11 @@ TagManager:
   - UI
   - Cube
   - CubeObstacle
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Plate
+  - Ghost
+  - Spider
+  - Pusher
+  - Puller
   - 
   - 
   - 
