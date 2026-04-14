@@ -7,15 +7,37 @@ public class Pusher : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Object") || other.CompareTag("Spider") || other.CompareTag("Ghost") || other.CompareTag("LightObject"))
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        switch (other.tag)
         {
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-
-            if (rb != null)
-            {
-                Vector2 worldForce = transform.TransformDirection(forceDirection);
-                rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
-            }
+            case "Object":
+                if (rb != null)
+                {
+                    Vector2 worldForce = forceDirection;
+                    rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
+                }
+                break;
+            case "LightObject":
+                if (rb != null)
+                {
+                    Vector2 worldForce = forceDirection;
+                    rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
+                }
+                break;
+            case "Ghost":
+                if (rb != null)
+                {
+                    Vector2 worldForce = forceDirection;
+                    rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
+                }
+                break;
+            case "Spider":
+                if (rb != null)
+                {
+                    Vector2 worldForce = forceDirection;
+                    rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
+                }
+                break;
         }
     }
 }

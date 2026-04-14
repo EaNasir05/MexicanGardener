@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     private bool pushing = false;
     private PlayerDirection playerDirection;
 
+    public bool IsPulling() => pulling;
+    public bool IsPushing() => pushing;
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -88,7 +91,7 @@ public class PlayerController : MonoBehaviour
         float y = input.y;
         if (x > 0)
         {
-            if (playerDirection != PlayerDirection.Right)
+            if (playerDirection != PlayerDirection.Right && !pushing && !pulling)
             {
                 playerDirection = PlayerDirection.Right;
                 _pusher.forceDirection = Vector2.right;
@@ -103,7 +106,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (x < 0)
         {
-            if (playerDirection != PlayerDirection.Left)
+            if (playerDirection != PlayerDirection.Left && !pushing && !pulling)
             {
                 playerDirection = PlayerDirection.Left;
                 _pusher.forceDirection = Vector2.left;
@@ -118,7 +121,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (y > 0)
         {
-            if (playerDirection != PlayerDirection.Up)
+            if (playerDirection != PlayerDirection.Up && !pushing && !pulling)
             {
                 playerDirection = PlayerDirection.Up;
                 _pusher.forceDirection = Vector2.up;
@@ -133,7 +136,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (y < 0)
         {
-            if (playerDirection != PlayerDirection.Down)
+            if (playerDirection != PlayerDirection.Down && !pushing && !pulling)
             {
                 playerDirection = PlayerDirection.Down;
                 _pusher.forceDirection = Vector2.down;

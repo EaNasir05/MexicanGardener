@@ -13,28 +13,28 @@ public class Puller : MonoBehaviour
             case "Object":
                 if (rb != null)
                 {
-                    Vector2 worldForce = transform.TransformDirection(forceDirection);
+                    Vector2 worldForce = forceDirection;
                     rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
                 }
                 break;
             case "LightObject":
                 if (rb != null)
                 {
-                    Vector2 worldForce = transform.TransformDirection(forceDirection);
+                    Vector2 worldForce = forceDirection;
                     rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
                 }
                 break;
             case "Ghost":
                 if (rb != null)
                 {
-                    Vector2 worldForce = transform.TransformDirection(forceDirection);
+                    Vector2 worldForce = forceDirection;
                     rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
                 }
                 break;
             case "Spider":
                 if (rb != null)
                 {
-                    Vector2 worldForce = transform.TransformDirection(forceDirection);
+                    Vector2 worldForce = forceDirection;
                     rb.AddForce(worldForce * forceStrength, ForceMode.Acceleration);
                 }
                 break;
