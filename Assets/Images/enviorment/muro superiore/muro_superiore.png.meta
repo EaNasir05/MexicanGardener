@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66438da031f4d0f4b936c14a79c0741e
-      internalID: 1419942797
+      spriteID: 3c3f1e591168cd64bb7e7e7da325c949
+      internalID: -1296101573
       vertices: []
       indices: 
       edges: []
@@ -123,7 +123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -134,8 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e176f7dc963c0cf4b9555fb7204a064c
-      internalID: 1561331674
+      spriteID: 88620980abaaf964ab1a4a5b7d082cf6
+      internalID: -1211981945
       vertices: []
       indices: 
       edges: []
@@ -145,7 +145,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8477b3232bddf44ba241af2daef8d5
-      internalID: -1338508251
+      spriteID: 9e10021db1900d649b0ce0f811b3ed2f
+      internalID: 1824264850
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b023a332dbda1ad4392126977eee2921
-      internalID: 1385186210
+      spriteID: 824b3a6ff2c65704b8bfdf17f6cad41c
+      internalID: -2101754529
       vertices: []
       indices: 
       edges: []
@@ -189,7 +189,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1350014622fdc4eb28257c717713cc
-      internalID: -716274481
+      spriteID: 7bc056370fce8a84c9f6077c0b9a0d16
+      internalID: 1011243191
       vertices: []
       indices: 
       edges: []
@@ -211,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 2400
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -222,8 +222,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b753c90f1efab7645950f81c33ad1b45
-      internalID: 1191812740
+      spriteID: 04f36debca0c2f34e8cfc1b2cb393465
+      internalID: 204007542
       vertices: []
       indices: 
       edges: []
@@ -232,8 +232,8 @@ TextureImporter:
       name: muro_superiore_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2240
+        x: 960
+        y: 320
         width: 160
         height: 160
       alignment: 0
@@ -244,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e73b160dfcc7a44b9d77e846b0f5b4b
-      internalID: -1664779583
+      spriteID: 2972f1cb992a06e439c414d7893a80f8
+      internalID: 1628751852
       vertices: []
       indices: 
       edges: []
@@ -254,8 +254,8 @@ TextureImporter:
       name: muro_superiore_7
       rect:
         serializedVersion: 2
-        x: 160
-        y: 2240
+        x: 0
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 301fec67fc85a0a47967fc15be9cbc28
-      internalID: 1941594168
+      spriteID: fae385719e6e1f84d8d2e8511685eeb4
+      internalID: -1936317022
       vertices: []
       indices: 
       edges: []
@@ -277,7 +277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 2240
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6491b3fdc95591243923ccc5a6c4e80e
-      internalID: 2076833999
+      spriteID: a334f3816f8d22844b5b0ca1aa01014d
+      internalID: 1886504234
       vertices: []
       indices: 
       edges: []
@@ -299,7 +299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 2240
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c41b215f8244e3498eb27d00a7dfe17
-      internalID: -1349324780
+      spriteID: 9ebfacf9c946a194ca82b2eddb5b2446
+      internalID: 1966903416
       vertices: []
       indices: 
       edges: []
@@ -321,7 +321,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 2240
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -332,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1db703534f6aa23449d15284ac5b5854
-      internalID: 2114167687
+      spriteID: 81ca1550f8df5134095f7dba4d17cebc
+      internalID: -411949365
       vertices: []
       indices: 
       edges: []
@@ -343,7 +343,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 2240
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -354,8 +354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5540a3f61cbabd44d89bf5ccaf922e87
-      internalID: 1489633475
+      spriteID: 076cc7d1f7990d146afb0d231fa62fbd
+      internalID: 1742739728
       vertices: []
       indices: 
       edges: []
@@ -365,7 +365,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 2240
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7ab256ae0623bf44ac44af6e1031c7c
-      internalID: 1293266075
+      spriteID: effb867417994c542b4cb29ac31c8ef6
+      internalID: -2139721351
       vertices: []
       indices: 
       edges: []
@@ -386,8 +386,8 @@ TextureImporter:
       name: muro_superiore_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2080
+        x: 1120
+        y: 160
         width: 160
         height: 160
       alignment: 0
@@ -398,8 +398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c183baa95fe51242ae8e3fd0ac24832
-      internalID: -1243585055
+      spriteID: f0c1f2745e6e5ea40930f6867b76bb1f
+      internalID: 943280465
       vertices: []
       indices: 
       edges: []
@@ -408,8 +408,8 @@ TextureImporter:
       name: muro_superiore_14
       rect:
         serializedVersion: 2
-        x: 160
-        y: 2080
+        x: 0
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -420,8 +420,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26215c262433c7e49b5d39c10b382ab8
-      internalID: 1660364125
+      spriteID: 138953b1580662d4ea4a5a3fab65b6e2
+      internalID: -1633981052
       vertices: []
       indices: 
       edges: []
@@ -430,8 +430,8 @@ TextureImporter:
       name: muro_superiore_15
       rect:
         serializedVersion: 2
-        x: 320
-        y: 2080
+        x: 160
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -442,8 +442,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e53febedea35d744a2bc4e80684decf
-      internalID: 614918392
+      spriteID: cf546d972eb5a3844b88bb2ec66571db
+      internalID: -1690580202
       vertices: []
       indices: 
       edges: []
@@ -452,8 +452,8 @@ TextureImporter:
       name: muro_superiore_16
       rect:
         serializedVersion: 2
-        x: 480
-        y: 2080
+        x: 320
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -464,8 +464,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6399536aed9fee24d958c1a34d854dda
-      internalID: -1397215987
+      spriteID: 7d1e8a312c349bc4d927c4c76e222e08
+      internalID: 31094030
       vertices: []
       indices: 
       edges: []
@@ -474,8 +474,8 @@ TextureImporter:
       name: muro_superiore_17
       rect:
         serializedVersion: 2
-        x: 640
-        y: 2080
+        x: 480
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -486,8 +486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 309aa36c966c55144a30f96092e2e7b4
-      internalID: -454783869
+      spriteID: 0586e3fbba7825f4cad90a05a225bbe4
+      internalID: 2000864157
       vertices: []
       indices: 
       edges: []
@@ -496,8 +496,8 @@ TextureImporter:
       name: muro_superiore_18
       rect:
         serializedVersion: 2
-        x: 800
-        y: 2080
+        x: 640
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -508,8 +508,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb35b70f2bfecfa4b98a01eaa0a2168d
-      internalID: 30845337
+      spriteID: 62919b07885be1e40b157150d8738c60
+      internalID: -905198197
       vertices: []
       indices: 
       edges: []
@@ -518,8 +518,8 @@ TextureImporter:
       name: muro_superiore_19
       rect:
         serializedVersion: 2
-        x: 960
-        y: 2080
+        x: 800
+        y: 0
         width: 160
         height: 160
       alignment: 0
@@ -530,8 +530,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91366c983dc9f1940b0f6d402e11880b
-      internalID: -659185356
+      spriteID: e49bd4a2f995e514ea7e7e2039e6f950
+      internalID: -915614420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_superiore_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea51fecbe9a3a04da1476fd7603390c
+      internalID: 439191261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_superiore_21
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b7582dbef4e614e854df314b2abafa
+      internalID: -2119972028
       vertices: []
       indices: 
       edges: []
@@ -540,7 +584,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c8af529816f310041bd9cd3fedb3551b
     internalID: 0
     vertices: []
     indices: 
@@ -550,26 +594,28 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      muro_superiore_0: 1419942797
-      muro_superiore_1: 1561331674
-      muro_superiore_10: 2114167687
-      muro_superiore_11: 1489633475
-      muro_superiore_12: 1293266075
-      muro_superiore_13: -1243585055
-      muro_superiore_14: 1660364125
-      muro_superiore_15: 614918392
-      muro_superiore_16: -1397215987
-      muro_superiore_17: -454783869
-      muro_superiore_18: 30845337
-      muro_superiore_19: -659185356
-      muro_superiore_2: -1338508251
-      muro_superiore_3: 1385186210
-      muro_superiore_4: -716274481
-      muro_superiore_5: 1191812740
-      muro_superiore_6: -1664779583
-      muro_superiore_7: 1941594168
-      muro_superiore_8: 2076833999
-      muro_superiore_9: -1349324780
+      muro_superiore_0: -1296101573
+      muro_superiore_1: -1211981945
+      muro_superiore_10: -411949365
+      muro_superiore_11: 1742739728
+      muro_superiore_12: -2139721351
+      muro_superiore_13: 943280465
+      muro_superiore_14: -1633981052
+      muro_superiore_15: -1690580202
+      muro_superiore_16: 31094030
+      muro_superiore_17: 2000864157
+      muro_superiore_18: -905198197
+      muro_superiore_19: -915614420
+      muro_superiore_2: 1824264850
+      muro_superiore_20: 439191261
+      muro_superiore_21: -2119972028
+      muro_superiore_3: -2101754529
+      muro_superiore_4: 1011243191
+      muro_superiore_5: 204007542
+      muro_superiore_6: 1628751852
+      muro_superiore_7: -1936317022
+      muro_superiore_8: 1886504234
+      muro_superiore_9: 1966903416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
