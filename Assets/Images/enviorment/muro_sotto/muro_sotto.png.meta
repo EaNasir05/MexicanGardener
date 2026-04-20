@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muro_sotto_0
+      name: muro_sotto_SA
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da45429ecb3aeaf4ea8085bf7ac0c03d
-      internalID: 1881876980
+      spriteID: 6cc7808eda0939c4ab71df1634f770d1
+      internalID: 470603418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muro_sotto_1
+      name: muro_sotto_CA
       rect:
         serializedVersion: 2
         x: 160
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b128f75b40742b49bd9a0a7d0e61bef
-      internalID: 390709541
+      spriteID: c25e9331d4bc0a14e91d9cd17e6e608b
+      internalID: 1225827872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muro_sotto_2
+      name: muro_sotto_SB
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b828d97dc792aa48ba3e10ccabd9618
-      internalID: 1618758916
+      spriteID: 8bcfbd769d36d47479caa9a603695cd0
+      internalID: -550008094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muro_sotto_3
+      name: muro_sotto_CB
       rect:
         serializedVersion: 2
         x: 160
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d23461afc4b534fa06f05dbe51b843
-      internalID: -1491332125
+      spriteID: d24b4af1ebeb0fc4b98cf23391df371f
+      internalID: -1904903479
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4156984671056db418f46ad3a61bbded
+    spriteID: a1d736cb0dd858e4886c7ae990028026
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      muro_sotto_0: 1881876980
-      muro_sotto_1: 390709541
-      muro_sotto_2: 1618758916
-      muro_sotto_3: -1491332125
+      muro_sotto_CA: 1225827872
+      muro_sotto_CB: -1904903479
+      muro_sotto_SA: 470603418
+      muro_sotto_SB: -550008094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

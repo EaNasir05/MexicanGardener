@@ -50,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7bd8cab21d97da488aa2d031eea6163
-      internalID: -408125958
+      spriteID: 0bed67efbc3d4d843bcc1b8c4c1cbd80
+      internalID: -567636584
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a4a725df721f35418cf5ab02c0bdc0e
-      internalID: -1508122427
+      spriteID: e16603fcb80763143bb949aeb26d8933
+      internalID: -1212453895
       vertices: []
       indices: 
       edges: []
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba3bd8faab09e14f94b7c7fea24b9b2
-      internalID: 1014631626
+      spriteID: 970a18dcdeb79d041ac0b16876bdca9e
+      internalID: -1177358446
       vertices: []
       indices: 
       edges: []
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f2b30b0ecde52f42be822c6b634e06a
-      internalID: -866123054
+      spriteID: 42b27b9282dbede4392b231c43e39eaf
+      internalID: -993656729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pavimento_LS
+      name: pavimento_CS
       rect:
         serializedVersion: 2
         x: 0
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42218bc72919c2b44afd5dd8f73310f3
-      internalID: 980835165
+      spriteID: fc9243ac9beaee44ea4af9d877113536
+      internalID: -528592805
       vertices: []
       indices: 
       edges: []
@@ -210,7 +210,7 @@ TextureImporter:
       name: pavimento_C1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 319
         y: 320
         width: 320
         height: 320
@@ -222,8 +222,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61ee34cda2e75574287e1efd971ec730
-      internalID: 574652055
+      spriteID: f435af15b71ac7945ac35f989ac1bf40
+      internalID: -1460189648
       vertices: []
       indices: 
       edges: []
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616dfe348cecba4478ebe8ba9a726f99
-      internalID: -532587860
+      spriteID: b92705d8c2e18774eafd71e86b4b2a7f
+      internalID: 1384887187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pavimento_LD
+      name: pavimento_CD
       rect:
         serializedVersion: 2
         x: 960
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42cdcf65c18a21c4da0a4eca96d2b380
-      internalID: -353336792
+      spriteID: 2dc8083affc398d4ba29900623e65987
+      internalID: -852787968
       vertices: []
       indices: 
       edges: []
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2e6d8cba3245041bdcad3d6ae7333b
-      internalID: 601960427
+      spriteID: 7f9b5f60bc227b54b958342a6201354c
+      internalID: 961873721
       vertices: []
       indices: 
       edges: []
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcbce2057332992458d7d050ca26e347
-      internalID: -997204277
+      spriteID: 289e650ac1088a94eae48be13085db7c
+      internalID: 1346677731
       vertices: []
       indices: 
       edges: []
@@ -332,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a2a305d5bdd8f4fba31cd998d5b2f2
-      internalID: -687805840
+      spriteID: 25428642c50d8444997f866ddcf6ce73
+      internalID: 642559606
       vertices: []
       indices: 
       edges: []
@@ -354,8 +354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd6187ced8945545bb8c4ff20c69b23
-      internalID: -1365180332
+      spriteID: bdacc6761bee3b64cb8446eafd25df07
+      internalID: -1913441731
       vertices: []
       indices: 
       edges: []
@@ -364,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: e15fadd65ea0a3c4694ee3acf5b3e43f
     internalID: 0
     vertices: []
     indices: 
@@ -374,18 +374,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pavimento_AC1: -1508122427
-      pavimento_AC2: 1014631626
-      pavimento_AD: -866123054
-      pavimento_AS: -408125958
-      pavimento_BC1: -997204277
-      pavimento_BC2: -687805840
-      pavimento_BD: -1365180332
-      pavimento_BS: 601960427
-      pavimento_C1: 574652055
-      pavimento_C2: -532587860
-      pavimento_LD: -353336792
-      pavimento_LS: 980835165
+      pavimento_AC1: -1212453895
+      pavimento_AC2: -1177358446
+      pavimento_AD: -993656729
+      pavimento_AS: -567636584
+      pavimento_BC1: 1346677731
+      pavimento_BC2: 642559606
+      pavimento_BD: -1913441731
+      pavimento_BS: 961873721
+      pavimento_C1: -1460189648
+      pavimento_C2: 1384887187
+      pavimento_CD: -852787968
+      pavimento_CS: -528592805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
