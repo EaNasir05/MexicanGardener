@@ -5,7 +5,8 @@ public enum PlayerDirection { Left, Right, Up, Down }
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed;
+    [SerializeField] private Sprite[] characterSprites;
+    
     [SerializeField] private float pullForceStrength;
     [SerializeField] private float pushForceStrength;
     public bool unlockedPull;
@@ -16,10 +17,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform[] _triggersPositions;
     private Puller _puller;
     private Pusher _pusher;
-    private Rigidbody _rb;
     private InputHandler _inputHandler;
+    private SpriteRenderer _spriteRenderer;
 
-    private Vector2 moveInput;
     private bool movingHorizontally = false;
     private bool movingVertically = false;
     private bool pulling = false;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _inputHandler = GetComponent<InputHandler>();
         _puller = _pullTrigger.GetComponent<Puller>();
         _pusher = _pushTrigger.GetComponent<Pusher>();
@@ -57,11 +57,6 @@ public class PlayerController : MonoBehaviour
         _inputHandler.OnPullCancel -= OnPullCancel;
     }
 
-    private void FixedUpdate()
-    {
-        _rb.linearVelocity = new Vector3(moveInput.x * movementSpeed, moveInput.y * movementSpeed, 0);
-    }
-
     private void OnMoveInput(Vector2 input)
     {
         if (input.x != 0 && !movingVertically)
@@ -81,8 +76,6 @@ public class PlayerController : MonoBehaviour
             movingVertically = false;
 
         UpdatePlayerDirection(input);
-
-        moveInput = input;
     }
 
     private void UpdatePlayerDirection(Vector2 input)

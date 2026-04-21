@@ -9,7 +9,7 @@ public class Plate : MonoBehaviour
     private int objectsOnThePlate = 0;
     private bool activated = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         objectsOnThePlate++;
         if (!activated)
@@ -24,7 +24,7 @@ public class Plate : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         objectsOnThePlate--;
         if (objectsOnThePlate <= 0)
