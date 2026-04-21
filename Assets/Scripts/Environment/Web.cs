@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class Leafs : MonoBehaviour
+public class Web : MonoBehaviour
 {
     [SerializeField] private float _pullDurationRequired;
-    private float totalDamage = 0;
+    [SerializeField] private Door _door;
+    public float totalDamage = 0;
     private Vector3 startingScale;
     private Vector3 endingScale;
 
@@ -19,7 +20,9 @@ public class Leafs : MonoBehaviour
         Vector3 scale = Vector3.Lerp(startingScale, endingScale, totalDamage / _pullDurationRequired);
         transform.localScale = scale;
         if (totalDamage >= _pullDurationRequired)
+        {
+            _door.Open();
             Destroy(gameObject);
+        }
     }
-
 }

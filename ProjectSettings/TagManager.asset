@@ -11,11 +11,19 @@ TagManager:
   - NoMask
   - Object
   - GameManager
+  - Leafs
+  - Web
+  - LightObject
+  - Valve
+  - Puller
+  - PullerChecker
+  - Spider
+  - Ghost
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LightCube
   - Water
   - UI
   - Cube
@@ -38,8 +46,8 @@ TagManager:
   - Pusher
   - Puller
   - Plate
-  - 
-  - 
+  - Spider
+  - Ghost
   - 
   - 
   - 

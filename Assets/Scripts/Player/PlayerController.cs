@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Pusher _pusher;
     private InputHandler _inputHandler;
     private SpriteRenderer _spriteRenderer;
+    [SerializeField] private PullerChecker _pullerChecker;
 
     private bool movingHorizontally = false;
     private bool movingVertically = false;
@@ -148,6 +149,8 @@ public class PlayerController : MonoBehaviour
     {
         if (unlockedPush && !_pushTrigger.activeSelf)
         {
+            if (_pullerChecker.projectile != null)
+                _pullerChecker.Shoot();
             _pushTrigger.SetActive(true);
             pushing = true;
         }
@@ -164,7 +167,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnPullPerform()
     {
-        if (unlockedPull && !_pullTrigger.activeSelf)
+        if (unlockedPull && !_pullTrigger.activeSelf && _pullerChecker.projectile == null)
         {
             _pullTrigger.SetActive(true);
             pulling = true;

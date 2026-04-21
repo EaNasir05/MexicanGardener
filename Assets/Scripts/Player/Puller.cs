@@ -24,6 +24,15 @@ public class Puller : MonoBehaviour
                     rb.AddForce(worldForce * forceStrength, ForceMode2D.Impulse);
                 }
                 break;
+            case "Leafs":
+                other.GetComponent<Leafs>().RemoveLeafs(Time.deltaTime);
+                break;
+            case "Web":
+                other.GetComponent<Web>().RemoveLeafs(Time.deltaTime);
+                break;
+            case "Valve":
+                other.GetComponent<Valve>().Rotate(1);
+                break;
             case "Ghost":
                 if (rb != null)
                 {

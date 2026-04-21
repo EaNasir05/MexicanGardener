@@ -17,12 +17,18 @@ public class Pusher : MonoBehaviour
                     rb.AddForce(worldForce * forceStrength, ForceMode2D.Impulse);
                 }
                 break;
+            case "Leafs":
+                other.GetComponent<Leafs>().RemoveLeafs(Time.deltaTime);
+                break;
             case "LightObject":
                 if (rb != null)
                 {
                     Vector2 worldForce = forceDirection;
                     rb.AddForce(worldForce * forceStrength, ForceMode2D.Impulse);
                 }
+                break;
+            case "Valve":
+                other.GetComponent<Valve>().Rotate(-1);
                 break;
             case "Ghost":
                 if (rb != null)
