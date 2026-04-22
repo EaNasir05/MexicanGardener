@@ -19,6 +19,7 @@ TagManager:
   - PullerChecker
   - Spider
   - Ghost
+  - Cacoon
   layers:
   - Default
   - TransparentFX

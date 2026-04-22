@@ -10532,6 +10532,9 @@ MonoBehaviour:
   pushForceStrength: 10
   unlockedPull: 1
   unlockedPush: 1
+  ableToPull: 1
+  ableToPush: 1
+  ableToMove: 1
   _pushTrigger: {fileID: 6186812092831893355}
   _pullTrigger: {fileID: 6091292979030116288}
   _triggersPositions:
@@ -17616,7 +17619,7 @@ Transform:
   m_GameObject: {fileID: 4070782444628771669}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17681,8 +17684,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  _pusher: {fileID: 7252113889258146738}
-  shotStrength: 20
+  pushDirection: {x: 0, y: 0}
+  shotStrength: 200
+  _ghostLayer: 27
 --- !u!1 &4758740126472810051
 GameObject:
   m_ObjectHideFlags: 0
@@ -17741,7 +17745,7 @@ Transform:
   m_GameObject: {fileID: 6091292979030116288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17792,7 +17796,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 0.75, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &3295052612661798883
 MonoBehaviour:
@@ -17835,7 +17839,7 @@ Transform:
   m_GameObject: {fileID: 6186812092831893355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17885,7 +17889,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 0.75, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &7252113889258146738
 MonoBehaviour:

@@ -47,6 +47,9 @@ public class Puller : MonoBehaviour
                     rb.AddForce(worldForce * forceStrength, ForceMode2D.Impulse);
                 }
                 break;
+            case "Cacoon":
+                other.GetComponent<Cacoon>().ApplyDragForce(forceDirection * forceStrength, ForceMode2D.Impulse);
+                break;
         }
     }
 }

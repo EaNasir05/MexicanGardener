@@ -3,11 +3,13 @@ using UnityEngine;
 public class Valve : MonoBehaviour
 {
     [SerializeField] private PlatesManager _manager;
+    [SerializeField] private PlatesManager _alternativeManager;
     [SerializeField] private float minRotation;
     [SerializeField] private float maxRotation;
     [SerializeField] private float rotationSpeed;
     private float currentRot = 0;
     private bool active = false;
+    private bool altActive = false;
 
     public void Rotate(float multiplier)
     {
@@ -18,12 +20,23 @@ public class Valve : MonoBehaviour
         {
             active = true;
             _manager.IncreasePlatesActivated();
-            transform.rotation = Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, maxRotation));
         }
-        else if (currentRot <= minRotation && active)
+        else if (active)
         {
             active = false;
             _manager.DecreasePlatesActivated();
+        }
+        if (currentRot <= minRotation && !altActive)
+        {
+            altActive = true;
+            if (_alternativeManager != null)
+                _alternativeManager.IncreasePlatesActivated();
+        }
+        else if (altActive)
+        {
+            altActive = false;
+            if (_alternativeManager != null)
+                _alternativeManager.DecreasePlatesActivated();
         }
     }
 }

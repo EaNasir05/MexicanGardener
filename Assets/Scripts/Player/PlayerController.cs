@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float pushForceStrength;
     public bool unlockedPull;
     public bool unlockedPush;
+    public bool ableToPull = true;
+    public bool ableToPush = true;
+    public bool ableToMove = true;
 
     [SerializeField] private GameObject _pushTrigger;
     [SerializeField] private GameObject _pullTrigger;
@@ -89,6 +92,7 @@ public class PlayerController : MonoBehaviour
             {
                 playerDirection = PlayerDirection.Right;
                 _pusher.forceDirection = Vector2.right;
+                _pullerChecker.pushDirection = Vector2.right;
                 _puller.forceDirection = Vector2.left;
                 Quaternion rot = Quaternion.Euler(0, 0, 90);
                 Vector3 pos = _triggersPositions[1].position;
@@ -96,6 +100,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                //_spriteRenderer.sprite = characterSprites[1];
             }
         }
         else if (x < 0)
@@ -104,6 +109,7 @@ public class PlayerController : MonoBehaviour
             {
                 playerDirection = PlayerDirection.Left;
                 _pusher.forceDirection = Vector2.left;
+                _pullerChecker.pushDirection = Vector2.left;
                 _puller.forceDirection = Vector2.right;
                 Quaternion rot = Quaternion.Euler(0, 0, 90);
                 Vector3 pos = _triggersPositions[3].position;
@@ -111,6 +117,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                //_spriteRenderer.sprite = characterSprites[3];
             }
         }
         else if (y > 0)
@@ -119,6 +126,7 @@ public class PlayerController : MonoBehaviour
             {
                 playerDirection = PlayerDirection.Up;
                 _pusher.forceDirection = Vector2.up;
+                _pullerChecker.pushDirection = Vector2.up;
                 _puller.forceDirection = Vector2.down;
                 Quaternion rot = Quaternion.Euler(0, 0, 0);
                 Vector3 pos = _triggersPositions[0].position;
@@ -126,6 +134,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                //_spriteRenderer.sprite = characterSprites[0];
             }
         }
         else if (y < 0)
@@ -134,6 +143,7 @@ public class PlayerController : MonoBehaviour
             {
                 playerDirection = PlayerDirection.Down;
                 _pusher.forceDirection = Vector2.down;
+                _pullerChecker.pushDirection = Vector2.down;
                 _puller.forceDirection = Vector2.up;
                 Quaternion rot = Quaternion.Euler(0, 0, 0);
                 Vector3 pos = _triggersPositions[2].position;
@@ -141,13 +151,14 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                //_spriteRenderer.sprite = characterSprites[2];
             }
         }
     }
 
     private void OnPushPerform()
     {
-        if (unlockedPush && !_pushTrigger.activeSelf)
+        if (unlockedPush && !_pushTrigger.activeSelf && ableToPush)
         {
             if (_pullerChecker.projectile != null)
                 _pullerChecker.Shoot();
@@ -167,7 +178,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnPullPerform()
     {
-        if (unlockedPull && !_pullTrigger.activeSelf && _pullerChecker.projectile == null)
+        if (unlockedPull && !_pullTrigger.activeSelf && _pullerChecker.projectile == null && ableToPull)
         {
             _pullTrigger.SetActive(true);
             pulling = true;
@@ -181,5 +192,11 @@ public class PlayerController : MonoBehaviour
             _pullTrigger.SetActive(false);
             pulling = false;
         }
+    }
+
+    public void StopPulling()
+    {
+        _pullTrigger.SetActive(false);
+        pulling = false;
     }
 }
