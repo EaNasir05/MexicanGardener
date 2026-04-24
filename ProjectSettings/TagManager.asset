@@ -2,22 +2,33 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - LevelBounds
   - FX
   - Enemy
   - World
   - NoMask
+  - Object
+  - GameManager
+  - Leafs
+  - Web
+  - LightObject
+  - Valve
+  - Puller
+  - PullerChecker
+  - Spider
+  - Ghost
+  - Cacoon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LightCube
   - Water
   - UI
-  - 
-  - 
+  - Cube
+  - CubeObstacles
   - Obstacles
   - Ground
   - Player
@@ -33,11 +44,11 @@ TagManager:
   - Camera2
   - Camera3
   - Camera4
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Pusher
+  - Puller
+  - Plate
+  - Spider
+  - Ghost
   - 
   - 
   - 
@@ -61,3 +72,5 @@ TagManager:
   - name: Above
     uniqueID: 961700441
     locked: 0
+  m_RenderingLayers:
+  - Default
