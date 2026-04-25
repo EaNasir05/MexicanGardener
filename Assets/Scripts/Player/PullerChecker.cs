@@ -27,6 +27,7 @@ public class PullerChecker : MonoBehaviour
                 pot.puller = transform;
                 pot.stuck = true;
                 projectile = pot.gameObject;
+                collision.GetComponent<Collider2D>().enabled=false;
                 break;
             case "Ghost":
                 Destroy(collision.gameObject);
@@ -60,6 +61,7 @@ public class PullerChecker : MonoBehaviour
         Pot pot = projectile.GetComponent<Pot>();
         pot.stuck = false;
         pot.dangerous = true;
+        projectile.GetComponent<Collider2D>().enabled = true;
         projectile.GetComponent<Rigidbody2D>().AddForce(pushDirection * shotStrength, ForceMode2D.Impulse);
         projectile = null;
     }

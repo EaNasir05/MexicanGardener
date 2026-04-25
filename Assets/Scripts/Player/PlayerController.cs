@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                _pullerChecker.transform.position = new Vector2(pos.x - 1, pos.y);
                 //_spriteRenderer.sprite = characterSprites[1];
             }
         }
@@ -117,6 +118,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                _pullerChecker.transform.position = new Vector2(pos.x + 0.5f, pos.y);
                 //_spriteRenderer.sprite = characterSprites[3];
             }
         }
@@ -134,6 +136,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                _pullerChecker.transform.position = new Vector2(pos.x, pos.y - 0.5f);
                 //_spriteRenderer.sprite = characterSprites[0];
             }
         }
@@ -151,6 +154,7 @@ public class PlayerController : MonoBehaviour
                 _pushTrigger.transform.rotation = rot;
                 _pullTrigger.transform.position = pos;
                 _pullTrigger.transform.rotation = rot;
+                _pullerChecker.transform.position = new Vector2(pos.x, pos.y + 1);
                 //_spriteRenderer.sprite = characterSprites[2];
             }
         }
