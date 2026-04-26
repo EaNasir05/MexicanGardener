@@ -29680,7 +29680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1561694053617324, guid: 89e8fe862f5cce84198ece4736c332ef, type: 3}
       propertyPath: m_TagString
-      value: Cacoon
+      value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 1671905898232590, guid: 89e8fe862f5cce84198ece4736c332ef, type: 3}
       propertyPath: m_Layer
@@ -29726,6 +29726,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 199337724902902500, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199945287388116138, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 278138783316840189, guid: 89e8fe862f5cce84198ece4736c332ef,
         type: 3}
       propertyPath: m_Layer
@@ -29740,6 +29750,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606192527695501269, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: managedReferences[0].OriginalLabel
+      value: Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606192527695501269, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: managedReferences[1].OriginalLabel
+      value: Particles Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719002209275833114, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: TriggerFilter
+      value: 195
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61032,6 +61057,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7470442994929166603, guid: 9b5bf86be1c47d14086e384b697ffd53,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 02d09f7b2a4148c429922022d3544abd,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63268,6 +63299,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valve
       objectReference: {fileID: 0}
+    - target: {fileID: 3239436581083040786, guid: ea82e227c3591b1429ba7512ba1a5058,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 013d3f6e9dcd74843929f662b6132b74,
+        type: 3}
     - target: {fileID: 4654285609105760454, guid: ea82e227c3591b1429ba7512ba1a5058,
         type: 3}
       propertyPath: _manager
@@ -63322,6 +63359,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134199494638992559, guid: ea82e227c3591b1429ba7512ba1a5058,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134199494638992559, guid: ea82e227c3591b1429ba7512ba1a5058,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

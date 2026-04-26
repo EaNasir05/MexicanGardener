@@ -445,6 +445,7 @@ MonoBehaviour:
   InitialHealth: 30
   MaximumHealth: 30
   ResetHealthOnEnable: 1
+  OnHealFeedback: {fileID: 0}
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 3547864438223399480}
   FeedbackIsProportionalToDamage: 0
@@ -495,6 +496,7 @@ MonoBehaviour:
       - Decision: {fileID: 114975266224184248}
         TrueState: Moving
         FalseState: 
+        LastDecisionEvaluation: 0
   - StateName: Moving
     Actions:
       array:
@@ -504,9 +506,11 @@ MonoBehaviour:
       - Decision: {fileID: 114975266224184248}
         TrueState: 
         FalseState: Detecting
+        LastDecisionEvaluation: 0
       - Decision: {fileID: 114631777180868210}
         TrueState: 
         FalseState: Detecting
+        LastDecisionEvaluation: 0
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -5660,7 +5664,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10506,7 +10509,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10753,6 +10755,9 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
@@ -10784,8 +10789,12 @@ MonoBehaviour:
   - rid: 1
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
+  MMF_ChannelMode: 0
+  MMF_Channel: 0
+  MMF_ChannelDefinition: {fileID: 0}
   references:
     version: 2
     RefIds:
@@ -10795,7 +10804,7 @@ MonoBehaviour:
         Active: 1
         UniqueID: -140617207
         Label: Sound
-        OriginalLabel: 
+        OriginalLabel: Sound
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
@@ -10920,7 +10929,7 @@ MonoBehaviour:
         Active: 1
         UniqueID: -423115958
         Label: Particles
-        OriginalLabel: 
+        OriginalLabel: Particles Play
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
@@ -11107,6 +11116,9 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
@@ -11139,8 +11151,12 @@ MonoBehaviour:
   - rid: 1597474022493519923
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
+  MMF_ChannelMode: 0
+  MMF_Channel: 0
+  MMF_ChannelDefinition: {fileID: 0}
   references:
     version: 2
     RefIds:
@@ -11429,6 +11445,7 @@ MonoBehaviour:
         DebugActive: 0
         TargetGameObject: {fileID: 1422487604856424639}
         ExtraTargetGameObjects: []
+        IgnorePlayDirection: 0
         SetStateOnInit: 0
         StateOnInit: 1
         SetStateOnPlay: 1
