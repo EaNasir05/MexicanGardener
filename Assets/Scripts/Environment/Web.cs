@@ -1,9 +1,12 @@
 using UnityEngine;
+using MoreMountains.TopDownEngine;
+using System.Collections.Generic;
 
 public class Web : MonoBehaviour
 {
     [SerializeField] private float _pullDurationRequired;
-    [SerializeField] private Door _door;
+    [SerializeField] private List<DungeonDoor> _doors; // <-- lista di porte
+    [SerializeField] private Web _linkedWeb;
     public float totalDamage = 0;
     private Vector3 startingScale;
     private Vector3 endingScale;
@@ -21,8 +24,27 @@ public class Web : MonoBehaviour
         transform.localScale = scale;
         if (totalDamage >= _pullDurationRequired)
         {
-            _door.Open();
+            OpenAllDoors();
+
+            if (_linkedWeb != null)
+                _linkedWeb.DestroyWeb();
+
             Destroy(gameObject);
+        }
+    }
+
+    public void DestroyWeb()
+    {
+        OpenAllDoors();
+        Destroy(gameObject);
+    }
+
+    private void OpenAllDoors()
+    {
+        foreach (DungeonDoor door in _doors)
+        {
+            if (door != null)
+                door.OpenDoor();
         }
     }
 }
