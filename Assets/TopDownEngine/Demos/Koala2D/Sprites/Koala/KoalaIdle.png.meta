@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: dc570d0b68875aa468baed8b33c5965b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89636
+  packageName: TopDown Engine
+  packageVersion: 4.5
+  assetPath: Assets/TopDownEngine/Demos/Koala2D/Sprites/Koala/KoalaIdle.png
+  uploadId: 846008
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -21,7 +28,7 @@ TextureImporter:
       213: 21300010
     second: Koala_Idle_5
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -85,7 +92,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,7 +105,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -111,7 +118,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -124,7 +131,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,132 +148,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Koala_Idle_0
+      name: KoalaIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 104
-        width: 24
-        height: 24
+        x: 13
+        y: 97
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55adecac69d4de4aa67f0e894d47a1b
-      internalID: 21300000
+      spriteID: d806ecd9be828a9479e4f6f9e131ebfc
+      internalID: -239447817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Idle_1
+      name: KoalaIdle_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 104
-        width: 24
-        height: 24
+        x: 46
+        y: 97
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5548672ba349af843935fbcfdfe82496
-      internalID: 21300002
+      spriteID: 9bde6a820dc57d74a9f2285cf7ef91df
+      internalID: 1738953040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Idle_2
+      name: KoalaIdle_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 104
-        width: 24
-        height: 24
+        x: 77
+        y: 96
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1db40129d5fbe7047ba9630a7d137c66
-      internalID: 21300004
+      spriteID: eb0b4b95f74c8a04695f8955656886f2
+      internalID: 1437853217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Idle_3
+      name: KoalaIdle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 24
-        height: 24
+        x: 13
+        y: 63
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 934f656bb9005a241bca92f8990e6197
-      internalID: 21300006
+      spriteID: 0dadbd3fb1d493143bb07e2706ab6979
+      internalID: -1496239508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Idle_4
+      name: KoalaIdle_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 80
-        width: 24
+        x: 45
+        y: 64
+        width: 23
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96019519d2cdfdb4aa5f74e0a6a5fc13
-      internalID: 21300008
+      spriteID: 67e8b5b88c2f8b14495b6f0da027b0a4
+      internalID: -676999384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Idle_5
+      name: KoalaIdle_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
-        width: 24
-        height: 24
+        x: 77
+        y: 64
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4804dc3373a5bb5438909ea94fc3cabf
-      internalID: 21300010
+      spriteID: 3a409e1a57a207b46a84fe60086705c2
+      internalID: -1189472708
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 239912b402edc52468bacfe8bea8ea5a
@@ -276,22 +290,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      Koala_Idle_0: 21300000
-      Koala_Idle_1: 21300002
-      Koala_Idle_2: 21300004
-      Koala_Idle_3: 21300006
-      Koala_Idle_4: 21300008
-      Koala_Idle_5: 21300010
+      KoalaIdle_0: -239447817
+      KoalaIdle_1: 1738953040
+      KoalaIdle_2: 1437853217
+      KoalaIdle_3: -1496239508
+      KoalaIdle_4: -676999384
+      KoalaIdle_5: -1189472708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 89636
-  packageName: TopDown Engine
-  packageVersion: 4.5
-  assetPath: Assets/TopDownEngine/Demos/Koala2D/Sprites/Koala/KoalaIdle.png
-  uploadId: 846008
