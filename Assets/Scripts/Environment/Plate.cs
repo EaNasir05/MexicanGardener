@@ -11,10 +11,7 @@ public class Plate : MonoBehaviour
     {
         if (CubeEntered != null && Vector2.Distance(CubeEntered.position, transform.position)<0.1f)
         {
-            other.GetComponent<Rigidbody2D>().constraints = 
-                 RigidbodyConstraints2D.FreezePositionX 
-               | RigidbodyConstraints2D.FreezePositionY 
-               | RigidbodyConstraints2D.FreezeRotation;
+            other.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             CubeEntered = null;
         }
     }

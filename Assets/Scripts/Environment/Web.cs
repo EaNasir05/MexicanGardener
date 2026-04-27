@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Web : MonoBehaviour
 {
     [SerializeField] private float _pullDurationRequired;
-    [SerializeField] private List<DungeonDoor> _doors; // <-- lista di porte
+    [SerializeField] private List<DungeonDoor> _doors;
     [SerializeField] private Web _linkedWeb;
     public float totalDamage = 0;
     private Vector3 startingScale;
