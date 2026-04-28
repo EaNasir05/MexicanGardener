@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 033095bb630654c4caf0fc7b6f6fa58d
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89636
+  packageName: TopDown Engine
+  packageVersion: 4.5
+  assetPath: Assets/TopDownEngine/Demos/Koala2D/Sprites/Koala/KoalaRun.png
+  uploadId: 846008
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -36,7 +43,7 @@ TextureImporter:
       213: 21300020
     second: Koala_Run_10
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -100,7 +107,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,7 +120,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,7 +133,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,7 +146,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -156,237 +163,249 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Koala_Run_0
+      name: KoalaRun_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 24
-        height: 24
+        x: 5
+        y: 65
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3157d416fb5bf0e4aac171c7f73a55bf
-      internalID: 21300000
+      spriteID: 4129d1c269c42734292b4bec309aa504
+      internalID: -179948389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_1
+      name: KoalaRun_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 48
-        width: 24
-        height: 24
+        x: 37
+        y: 66
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00ee5a5a59426aa4b863bd66c37383cc
-      internalID: 21300002
+      spriteID: 749ebf7f95ffe82499dda08097ccaeb0
+      internalID: -1674093282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_2
+      name: KoalaRun_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 24
-        height: 24
+        x: 69
+        y: 65
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b926e1d5199d542a68aa30eb2acb56
-      internalID: 21300004
+      spriteID: eead7bc3119d97f43a38f0fd10ab7c6f
+      internalID: 950171417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_3
+      name: KoalaRun_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 48
-        width: 24
-        height: 24
+        x: 102
+        y: 65
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8019e94ae9899fb4e89c564a1f6301cd
-      internalID: 21300006
+      spriteID: ad9ebe95e47256f4f8a01fa59d56c46a
+      internalID: -1878257762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_4
+      name: KoalaRun_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
-        width: 24
-        height: 24
+        x: 5
+        y: 33
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce3c861fee8515d4c8a7d05cbe537304
-      internalID: 21300008
+      spriteID: 5213fe5c96393d74fbd29270c4bb3cbb
+      internalID: -853101017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_5
+      name: KoalaRun_5
       rect:
         serializedVersion: 2
-        x: 24
-        y: 24
-        width: 24
-        height: 24
+        x: 37
+        y: 33
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eecc033b93d9f74e9ba865d2a166ecf
-      internalID: 21300010
+      spriteID: 817d3b954ce0566478d973f5a9212ef5
+      internalID: -698563627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_6
+      name: KoalaRun_6
       rect:
         serializedVersion: 2
-        x: 48
-        y: 24
-        width: 24
-        height: 24
+        x: 69
+        y: 33
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce4946db9115e6c44af21a5425638c9a
-      internalID: 21300012
+      spriteID: dd592953dd148084db1f69d63aeb5983
+      internalID: 659529910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_7
+      name: KoalaRun_7
       rect:
         serializedVersion: 2
-        x: 72
-        y: 24
-        width: 24
+        x: 101
+        y: 33
+        width: 22
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 288634cb6e8ee7d4488a688114343ba8
-      internalID: 21300014
+      spriteID: f49a0a28ada7a8b42aff08ebd6236db7
+      internalID: -336362346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_8
+      name: KoalaRun_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 24
-        height: 24
+        x: 5
+        y: 1
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f780580429ef584ca82a91aaef380d2
-      internalID: 21300016
+      spriteID: 71821edd409067443984658dcc674192
+      internalID: 2025191420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_9
+      name: KoalaRun_9
       rect:
         serializedVersion: 2
-        x: 24
-        y: 0
-        width: 24
-        height: 24
+        x: 37
+        y: 1
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b6515f73909e94ca5e8d539bfca4c2
-      internalID: 21300018
+      spriteID: d5454a15218f7814087d894ba67fbd13
+      internalID: 175155849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Koala_Run_10
+      name: KoalaRun_10
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
+        x: 69
+        y: 1
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4b0557926dd1e4fbb3c4213324b8f4
-      internalID: 21300020
+      spriteID: 6f2b3596b31bbd1458532be5ee909cf0
+      internalID: -933482150
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 17c7a59a0b6da0f40aeec33bbe03186a
@@ -396,27 +415,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      Koala_Run_0: 21300000
-      Koala_Run_1: 21300002
-      Koala_Run_10: 21300020
-      Koala_Run_2: 21300004
-      Koala_Run_3: 21300006
-      Koala_Run_4: 21300008
-      Koala_Run_5: 21300010
-      Koala_Run_6: 21300012
-      Koala_Run_7: 21300014
-      Koala_Run_8: 21300016
-      Koala_Run_9: 21300018
+      KoalaRun_0: -179948389
+      KoalaRun_1: -1674093282
+      KoalaRun_10: -933482150
+      KoalaRun_2: 950171417
+      KoalaRun_3: -1878257762
+      KoalaRun_4: -853101017
+      KoalaRun_5: -698563627
+      KoalaRun_6: 659529910
+      KoalaRun_7: -336362346
+      KoalaRun_8: 2025191420
+      KoalaRun_9: 175155849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 89636
-  packageName: TopDown Engine
-  packageVersion: 4.5
-  assetPath: Assets/TopDownEngine/Demos/Koala2D/Sprites/Koala/KoalaRun.png
-  uploadId: 846008

@@ -29726,6 +29726,26 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 114637059735928924, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: RunSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809083901408364, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: WalkSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809083901408364, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: Acceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114809083901408364, guid: 89e8fe862f5cce84198ece4736c332ef,
+        type: 3}
+      propertyPath: Deceleration
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 199337724902902500, guid: 89e8fe862f5cce84198ece4736c332ef,
         type: 3}
       propertyPath: m_Materials.Array.size

@@ -1,8 +1,9 @@
 using UnityEngine;
+using MoreMountains.TopDownEngine;
 
 public class LockedDoorChecker : MonoBehaviour
 {
-    [SerializeField] private Door _door;
+    [SerializeField] private DungeonDoor _door; // <-- cambiato
     [SerializeField] private int[] _requiredKeys;
     private KeysManager _keysManager;
 
@@ -15,7 +16,7 @@ public class LockedDoorChecker : MonoBehaviour
     {
         if (collision.CompareTag("Player") && HasAllRequiredKeys())
         {
-            _door.Open();
+            _door.OpenDoor(); // <-- cambiato
             Destroy(gameObject);
         }
     }

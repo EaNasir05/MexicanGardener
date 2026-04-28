@@ -1,8 +1,11 @@
 using UnityEngine;
+using MoreMountains.TopDownEngine;
+using System.Collections.Generic;
 
 public class Leafs : MonoBehaviour
 {
     [SerializeField] private float _pullDurationRequired;
+    [SerializeField] private List<DungeonDoor> _doors;
     private float totalDamage = 0;
     private Vector3 startingScale;
     private Vector3 endingScale;
@@ -19,7 +22,18 @@ public class Leafs : MonoBehaviour
         Vector3 scale = Vector3.Lerp(startingScale, endingScale, totalDamage / _pullDurationRequired);
         transform.localScale = scale;
         if (totalDamage >= _pullDurationRequired)
+        {
+            OpenAllDoors();
             Destroy(gameObject);
+        }
     }
 
+    private void OpenAllDoors()
+    {
+        foreach (DungeonDoor door in _doors)
+        {
+            if (door != null)
+                door.OpenDoor();
+        }
+    }
 }
