@@ -12,7 +12,8 @@ public class Key : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        Debug.Log("Trigger colpito da: " + collision.gameObject.name + " layer: " + collision.gameObject.layer);
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             _manager.AddKey(index);
             Destroy(gameObject);

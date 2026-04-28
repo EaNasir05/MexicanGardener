@@ -7,7 +7,7 @@ public enum ActivatableObjectType { Door, Key, SpriteChange }
 public class PlatesManager : MonoBehaviour
 {
     [SerializeField] private ActivatableObjectType _objectToActivateType;
-    [SerializeField] private List<GameObject> _objectsToActivate; // <-- lista invece di singolo
+    [SerializeField] private List<GameObject> _objectsToActivate;
     [SerializeField] private int _platesNumberRequired;
     [SerializeField] private Sprite _activatedSprite;
     [SerializeField] private Sprite _deactivatedSprite;
@@ -16,11 +16,12 @@ public class PlatesManager : MonoBehaviour
     public void IncreasePlatesActivated()
     {
         platesActivated++;
+        Debug.Log("IncreasePlatesActivated chiamato, platesActivated: " + platesActivated + " required: " + _platesNumberRequired);
         if (platesActivated != _platesNumberRequired) return;
-
         foreach (GameObject obj in _objectsToActivate)
         {
             if (obj == null) continue;
+            Debug.Log("Attivando: " + obj.name);
             switch (_objectToActivateType)
             {
                 case ActivatableObjectType.Door:
@@ -30,7 +31,9 @@ public class PlatesManager : MonoBehaviour
                     obj.SetActive(true);
                     break;
                 case ActivatableObjectType.SpriteChange:
-                    obj.GetComponent<SpriteRenderer>().sprite = _activatedSprite;
+                    var srIncrease = obj.GetComponent<SpriteRenderer>();
+                    if (srIncrease.sprite != _activatedSprite)
+                        srIncrease.sprite = _activatedSprite;
                     break;
             }
         }
@@ -49,7 +52,9 @@ public class PlatesManager : MonoBehaviour
                         obj.GetComponent<DungeonDoor>().CloseDoor();
                         break;
                     case ActivatableObjectType.SpriteChange:
-                        obj.GetComponent<SpriteRenderer>().sprite = _deactivatedSprite;
+                        var srDecrease = obj.GetComponent<SpriteRenderer>();
+                        if (srDecrease.sprite != _deactivatedSprite) // <-- fix
+                            srDecrease.sprite = _deactivatedSprite;
                         break;
                 }
             }

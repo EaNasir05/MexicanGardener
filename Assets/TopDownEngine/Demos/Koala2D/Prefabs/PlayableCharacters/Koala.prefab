@@ -10529,10 +10529,10 @@ MonoBehaviour:
   characterSprites: []
   pullForceStrength: 7
   pushForceStrength: 10
-  unlockedPull: 1
-  unlockedPush: 1
-  ableToPull: 1
-  ableToPush: 1
+  unlockedPull: 0
+  unlockedPush: 0
+  ableToPull: 0
+  ableToPush: 0
   ableToMove: 1
   _pushTrigger: {fileID: 6186812092831893355}
   _pullTrigger: {fileID: 6091292979030116288}
@@ -15612,6 +15612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4515663194721164}
+  - component: {fileID: 7111033616767684945}
   m_Layer: 10
   m_Name: WeaponAttachment
   m_TagString: Untagged
@@ -15635,6 +15636,19 @@ Transform:
   - {fileID: 6997723142098693058}
   m_Father: {fileID: 4330552656303096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7111033616767684945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865617948810876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb05ccc4b7e9de3479c8119a7a44e40f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visualToActivate: {fileID: 3963464476288639241}
 --- !u!1 &1600486436912884018
 GameObject:
   m_ObjectHideFlags: 0
@@ -17604,11 +17618,11 @@ GameObject:
   - component: {fileID: 8503721459670414972}
   m_Layer: 0
   m_Name: sprite1_sparafoglie
-  m_TagString: Untagged
+  m_TagString: PullSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6997723142098693058
 Transform:
   m_ObjectHideFlags: 0
